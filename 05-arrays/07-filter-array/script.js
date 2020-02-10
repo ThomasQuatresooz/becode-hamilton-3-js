@@ -10,8 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    const people = [
-        {
+    const people = [{
             firstname: "Dreddy",
             lastname: "Nussgen",
             age: 70,
@@ -89,4 +88,11 @@
     ];
 
     // your code here
+    document.getElementById('run').addEventListener(
+        'click',
+        () => {
+            var adult = people.filter(p => (p.age > 18));
+            console.log(adult);
+            
+        })
 })();
