@@ -91,8 +91,7 @@
     document.getElementById('run').addEventListener(
         'click',
         () => {
-            var adult = people.filter(p => (p.age > 18));
+            const adult = people.filter(person => (person.age > 18));
             console.log(adult);
-            
         })
 })();
