@@ -11,4 +11,23 @@
 
 (() => {
     // your code here
+
+    let input1 = document.getElementById('pass-one');
+    let input2 = document.getElementById('pass-two');
+
+    //recup the init border color
+    let initColor = input1.style.borderColor;         
+
+    document.getElementById('run').addEventListener(
+        'click',
+        () => {
+            if (input1.value != input2.value) {
+                input1.style.borderColor = "red";
+                input2.style.borderColor = "red";
+            } else {
+                input1.style.borderColor = initColor;
+                input2.style.borderColor = initColor;
+            }
+        }
+    )
 })();
